@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    height: 100vh;
+}
+
+#content {
+    background-color: #fff;
+    width: 800px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    text-align: left;
+    color: #333;
+}

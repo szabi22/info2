@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Ratings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Filmek</h1>
+        <p>Mint Béla, NEPTUN</p>
+    </header>
+    <main>
+        <div class="movie">
+            <h2>Shrek <span>(2001)</span></h2>
+            <p>Értékelés: 3.00 (2 válasz)</p>
+            <p>Péter: 3 / 5<br>Anna: 4 / 5<br>...</p>
+        </div>
+        <div class="movie">
+            <h2>Thor <span>(2011)</span></h2>
+            <p>Értékelés: 4.00 (3 válasz)</p>
+            <p>Péter: 5 / 5<br>Anna: 4 / 5<br>...</p>
+        </div>
+        <div class="movie">
+            <h2>Dűne <span>(2021)</span></h2>
+            <p>Értékelés: 0.00 (0 válasz)</p>
+            <p>Nincs értékelés</p>
+        </div>
+    </main>
+    <footer>
+        <form action="submit.php" method="post">
+            <label for="movie">Film:</label>
+            <select id="movie" name="movie">
+                <option value="shrek">Shrek</option>
+                <option value="thor">Thor</option>
+                <option value="dune">Dűne</option>
+            </select>
+            <label for="name">Név:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="score">Pontszám:</label>
+            <input type="number" id="score" name="score" min="1" max="5" required>
+            <button type="submit">Küldés</button>
+        </form>
+    </footer>
+</body>
+</html>
